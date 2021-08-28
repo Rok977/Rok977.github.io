@@ -34,12 +34,32 @@
         display:flex;
         justify-content: center;
     }
-    aside
+
+    #article
+    {
+        display:flex;
+        flex-direction:column;
+        
+    }
+
+    #article img 
+    {
+        min-height:100px;
+        max-height:150px;
+        min-width:260px;
+        max-width:400px;
+    }
+    #aside
     {
         display:flex;
         margin-left:0px;
         width:auto;
         flex-direction:column;
+    }
+
+    #aside div
+    {
+        
     }
     nav
     {
@@ -69,17 +89,31 @@
     p
     {font-size:10px;}
 
-    .haut
+    #haut
     {
         display:flex;
         flex-direction:column;
+        height:auto;
     }
-
-    .bas
+    #haut div
+    {
+        min-width: 260px;
+        max-width: 400px;
+     
+    }
+    #bas
     {
     
         display:flex;
         flex-direction:column;
+        height:auto;
+        margin:0px;
+    }
+    #bas div
+    {
+        min-width: 260px;
+        max-width: 400px;
+           
     }
     #Activités article
     {
@@ -101,21 +135,9 @@
         flex-direction:column;
         display:flex;
     }
-
-    .Gauche
-    {
-        flex-direction:column;
-        align-items:center;
-        
-    }
-
     .Gauche #Bulleg
     {
         max-width:400px;
-    }
-    .droite
-    {
-        flex-direction:column;
     }
 
 #ordreg
@@ -610,6 +632,7 @@ aside img
     margin-left:20px;
     margin-right:20px;
     flex-direction:column;
+    width:auto;
 }
 
 
@@ -645,12 +668,11 @@ margin-bottom:0px;
 /*Disposition de la section basse*/
 .sectionbas
 {
-     display:grid;
-     grid-area: 2section;
-    grid-template-columns: repeat(2 ,1fr);
-    grid-template-areas:"grand figure grand figure";
+     display:flex;
     height:50%;
     width:100%;
+    flex-direction:row;
+    justify-content:space-between;
  
 }
 
@@ -661,15 +683,13 @@ margin-bottom:0px;
     display:flex;
     flex-direction:column;
     grid-area:figure;
-    justify-content: center;
-    height:100%;
-    margin-left:30px;
+    align-items:center;
 }
 
 .ordre .Bulleimages img
 {
        width: 290px;
-       height:170px;
+       height:150px;
     max-height: 200px;
     border-radius: 15px 15px 0px 0px;
     box-shadow: 1px 1px 5px rgb(150, 150, 150);
@@ -678,7 +698,7 @@ margin-bottom:0px;
 
 .ordre .Marge
 {
-    height:10%;
+    margin-top:25px;
 }
 
 
@@ -695,9 +715,8 @@ margin-right:130px;
 /*Largeur des image de la section basse*/
 .sectionbas  img 
 {
-    max-width: 290px;
-    border-radius: 15px 15px 0px 0px;
-    box-shadow: 1px 1px 5px rgb(150, 150, 150);
+    min-width: 290px;
+    border-radius: 25px 25px 0px 0px;
     max-height:150px;
 }
 
@@ -705,40 +724,23 @@ margin-right:130px;
 /*La section basse est scindé en 2 partie contenant 3 élement chacune */
 
 /*Disposition de l'element*/
-.Gauche
-{
- width:100%;
-display:flex;
-height:80%;
-justify-content: center;
-}
+
 
 /* Bulle*/
-.Gauche .Bulleimages
-{
-    background-color:white;
-    max-width:290px;
-    padding-bottom:40px;
-    box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    border-radius: 15px 15px 15px 15px;
-    display:flex;
-  
- 
-    flex-direction:column;
-    
-}
+
 
 .Bulle03
 {
       background-color:white;
     
-    padding-bottom:40px;
+    padding-bottom:10px;
     box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 25px 25px 25px 25px;
     display:flex;
     margin-left:auto;
     margin-right:auto;
     flex-direction:column;
+    margin-bottom:50px;
 }
 
 
@@ -747,9 +749,9 @@ justify-content: center;
 {
      background-color:white;
     
-    padding-bottom:40px;
+    padding-bottom:10px;
     box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 25px 25px 25px 25px;
     display:flex;
     margin-left:auto;
     margin-right:auto;
@@ -761,13 +763,14 @@ justify-content: center;
 /* hauteur de l'image coté gauche*/
 .Gauche .Bulleimages img
 {
-    height:500px;
+    min-height:365px;
+    max-height:500px;
 }
 
 
 .Bulle02 img
 {
- height:250px;
+ max-height:200px;
 }
 
 
@@ -778,23 +781,17 @@ justify-content: center;
 
 /*Coté droite de la section basse*/
 
-.droite 
-{
 
-display:flex;
-margin-left:12px;
-height:80%;
-}
 
 /*Bulle */
 
-.droite .Bulleimages
+.Bulleimages
 {
      background-color:white;
     
-    padding-bottom:40px;
+    padding-bottom:10px;
     box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 25px 25px 25px 25px;
     display:flex;
     width:290px;
   
@@ -803,18 +800,32 @@ height:80%;
 }
 
 
-.BulleG
+.Bulle01
+{
+     background-color:white;
+    
+    padding-bottom:10px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 25px 25px 25px 25px;
+    display:flex;
+    width:290px;
+    height:80%;
+    padding-bottom:40px;
+    flex-direction:column;
+}
+
+
+
+.Bulle04
 {
     background-color:white;
-    min-width:290px;
+    max-width:290px;
     padding-bottom:40px;
     box-shadow: 1px 1px 10px rgb(150, 150, 150);
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 25px 25px 25px 25px;
     display:flex;
-    margin-left:auto;
-    margin-right:auto;
     flex-direction:column;
-  
+    height:80%;
     
 }
 
@@ -823,10 +834,17 @@ height:80%;
 /*Image du coté droit*/
 
 
-.droite .BulleG img
+.Bulle01 img
 
 {
- height:500px;
+ max-height: 500px;
+min-height: 365px;
+}
+
+.Bulle04 img
+{
+max-height: 500px;
+min-height: 365px;
 }
 
 /* Footer */
@@ -839,6 +857,7 @@ footer
     flex-direction:row;
     height:100%;
     justify-content: space-around;
+    
 }
 
 /*Style code rubrique a propos*/
