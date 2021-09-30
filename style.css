@@ -1,0 +1,1456 @@
+/*Projet - 2 Reservia de mon cursus scolaire chez OpenClassroom*/
+/*Responsive design*/
+
+
+@media screen and (max-device-width: 762px)
+{
+
+    p
+    {
+        font-size:2.0em;
+    }
+
+    #body
+    {
+        
+        Display:flex;
+        flex-direction:column;
+        background-color:white;
+    }
+
+    #header
+    {
+        width:auto;
+        padding-left: 3.3vw;
+        padding-right: 3.3vw;
+    }
+
+    #header img 
+    {
+
+    }
+    #main
+    {
+        width:100vw;
+        display:flex;
+        
+    
+    }
+
+    #recherche
+    {
+        height: 15vw;
+        width: 70vw;
+        font-size: 2.3em;
+        font-weight: bold;
+
+    }
+#icsearch
+{
+display: flex;
+font-size: 1.5em;
+color: white;
+
+
+}
+.search p 
+{display:none;
+}
+    #contentsearch i
+    {
+        Padding: 4.2vw;
+        align-self: center;
+        font-size: 4.3em;
+        height:auto;
+        width:auto;
+        margin-left:3vw;
+    }
+
+    #mobilebutton
+    {
+    height: 15vw;
+    width: 12vw;
+    font-size: 2.3em;
+    padding: 3vw;
+    border-radius: 35px 35px 35px 35px;
+
+    }
+    #filtres
+    {
+         display:grid;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows:  0.5fr 0.5fr 0.5fr 0.5fr  ;
+        grid-template-areas: 
+        "titre titre"
+        "grid01 grid02"
+        "grid03 ."
+        "grid04 .";
+        padding-left: 3vw;
+        grid-gap: 3vw 0vw;
+    }
+
+  #grid01
+  {
+     grid-area:grid01;
+
+  }
+  #grid02
+  {
+      grid-area:grid02;
+
+  }
+ #grid03
+ {   
+    grid-area:grid03;
+}
+#grid04
+{
+    grid-area:grid04;
+}
+    
+    #Hébergements
+    {
+        width:100vw;
+        flex-direction:column-reverse;
+        display:flex;
+        justify-content: center;
+    }
+
+    #article
+    {
+        display:flex;
+        flex-direction:column;
+        background-color: white;
+        padding:3vw;
+        
+    }
+
+    #article img 
+    {
+      min-height: 300px;
+max-height: 400px;
+min-width: 98.9%;
+    }
+    #aside
+    {
+        display:flex;
+        margin-left:unset;
+        width:100vw;
+        flex-direction:column;
+        padding: 2.2vw;
+
+    }
+    #aside img 
+    {
+        width: 40vw;
+        height: 30vw;
+    }
+
+    #aside h2
+    {
+        margin-left:unset;
+        justify-content: space-between;
+        display: flex;
+       
+    }
+
+    #nav #signin
+    {
+        grid-area:sign;
+        align-self:center;
+        align-self: end;
+        justify-self: end;
+        padding-top: 6vw;
+        text-align: end;
+        padding-right: unset;
+        padding-left:unset;
+        margin-left: auto;
+         font-weight:bold;
+    }
+
+  
+    #activitym
+    {
+        display:flex;
+        grid-area: act;
+        border-bottom: solid 10px;
+        border-bottom-color:#F2F2F2;
+    }
+
+    #hbnav
+    {display:flex;
+     grid-area: hb;
+     border-bottom: solid 10px;
+     border-bottom-color: #0065FC;
+    }
+
+    #signav
+    {display:flex;
+     grid-area:sign;
+     margin-left:unset
+     }
+
+    #imgnav
+    {display:flex;
+     grid-area:img;
+    }
+    #nav #hb
+    {
+        grid-area:hb;
+        justify-self:end;
+        padding:unset;
+        margin:auto;
+    
+    }
+
+    #nav #act
+    {
+        grid-area:act;
+        justify-self:center;
+        padding:unset;
+        margin:auto;
+        
+    }
+    #filtres i
+    {
+        height:10vw;
+        width:10vw;
+        font-size:2.5em;
+    }
+    #filtres .iconfiltre
+    {
+        height:8vw;
+    }
+
+    #aside div
+    {
+         min-width:400px;
+    
+         min-height:300px;
+
+         margin-top:unset;
+         margin-bottom:5%;
+    }
+
+    #aside div img 
+    {
+        min-width:38vw;
+ 
+        min-height:38vw;
+        margin-left:unset;
+        padding:1vw;
+      
+    }
+
+    #aside article i
+    {
+        font-size:2.0em;
+    }
+
+    #iconpop
+    {
+        color:black;
+        font-size: 1.5em;
+    }
+    #haut i
+    {
+        font-size:2.0em;
+    }
+    #nav
+    {
+        width:100vw;
+        display:grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+        grid-row-gap:5px;
+        grid-template-areas: 
+        "img sign" 
+        "hb act";
+
+    }
+    
+    #nav img
+    {
+     min-width:25vw;
+     grid-area:img;
+     align-self: center;
+     padding-top: unset;
+     justify-self: start;
+
+    }
+
+    #nav li
+    {
+        padding-left: 4px;
+    }
+    
+    #nav a
+    {
+        font-size: 3.0em;
+          color:#0065FC;
+    }
+    
+    #nav a:hover
+    {
+        border-bottom: 0;
+          border-top:solid;
+        border-color:#0065FC;
+      
+    }
+    p
+    {font-size:10px;}
+
+    #haut
+    {
+        display:flex;
+        flex-direction:column;
+        height:auto;
+        margin-bottom:unset;
+        width:99vw;
+        background-color: unset;
+    }
+    #haut article
+    {
+        margin-left:unset;
+        margin-right:unset;
+        margin-bottom:7vw;
+    }
+    #haut div
+    {
+       
+        min-height:400px;
+        margin-bottom:5%;
+        margin-left:unset;
+        margin-right:unset;
+     
+    }
+    #titreart
+    {
+    margin-left:unset;
+    }
+    #bas
+    {
+    
+        display:flex;
+        flex-direction:column;
+        height:auto;
+        margin:unset;
+        width:100vw;
+        background-color:white;
+
+    }
+    #bas article
+    {
+        margin-left: unset;
+margin-right: unset;
+margin-bottom: 7vw;
+    }
+    #bas i
+    {
+        font-size:2.0em;
+    }
+    #bas div
+    {
+        min-width: 400px;
+        max-width: 100%;
+        margin-bottom:5%;
+        margin-left:unset;
+        margin-right:unset;
+           
+    }
+    #Activités article
+    {
+        display:flex;
+        flex-direction:column;
+        width:99vw;
+        margin-bottom:5vw;
+    }
+
+    #Activités img
+    {
+max-height: 40vw;
+min-height: 30vw;
+width: 99vw;
+height: unset;
+    }
+
+    #Activités 
+    {
+        flex-direction:column;
+        display:flex;
+        width:100vw;
+        padding:3vw;
+    }
+    .Gauche #Bulleg
+    {
+        max-width:400px;
+    }
+
+#ordreg
+{
+    margin-left:0px;
+}
+
+
+
+#ordred
+{
+   width: 99vw;
+}
+  
+
+
+
+#Bulle03
+{
+    margin-left:unset;
+    margin-right:unset;
+
+}
+
+
+
+#footer
+{
+    flex-direction:column;
+    width:105vw;
+}
+.Mobilesize
+{
+    font-size: 2.5em;
+    padding: 3vw;
+    padding-top: 3vw;
+    padding-top: unset;
+}
+
+#h2 i
+
+{
+    color:black;
+}
+#h1
+{
+    font-size:3.5em;
+    padding:3vw;
+    padding-top:unset;
+}
+
+#h5
+{
+    font-size: 2.5em;
+    grid-area: titre;
+    margin-bottom:unset;
+}
+
+#h3
+{
+    font-size:2.3em;
+}
+
+.titresizemobile
+{
+    font-size: 3.5em;
+}
+.H4mobile
+{
+    font-size:3.0em;
+}
+
+#footer h6
+{
+    font-size:3.0em
+}
+
+#footer a
+
+{
+    font-size:2.5em;
+}
+
+#footer li
+{
+    margin-bottom:4vw;
+}
+
+}
+
+
+
+
+
+@media screen and (min-device-width:763px) and (max-device-width: 1024px)
+{
+
+    #body
+    {
+        display:flex;
+        flex-direction:column;
+    }
+     #Hébergements
+     {
+        display:flex;
+        flex-direction:column-reverse;
+     }
+     
+
+     #alignement
+     {
+         margin-top:3.5vw;
+         display: flex;
+        flex-direction: row;
+        align-items: center;
+
+     }
+     #Activités
+     {
+         display:flex;
+         flex-wrap:wrap;
+        justify-content:space-evenly;
+     }
+
+     #Activités img 
+     {
+         width:30vw;
+     }
+     #aside
+     {
+         margin-left:unset;
+     }
+     #aside img 
+     {
+      width: 25vw;
+    height: 20vw;   
+     }
+     #article img
+     {
+         height: 20vw;
+         width: 29vw;
+     }
+     #ordreg
+     {
+         flex-direction:row;
+
+     }
+     #ordreg img
+     {
+        max-width:290px;
+         min-height: 370px;
+     }
+
+     
+    
+     #ordred
+     {flex-direction:row;
+        margin-top:4vw;
+
+    }
+
+    #ordred img 
+    {
+        max-height: 500px;
+        min-height: 365px;
+        width:30vw;
+    }
+
+    #Bulleimages
+    {
+        height:100%;
+        Width: 30vw;
+    }
+    #Bulleimages02
+    {
+        height:100%;
+        margin-left:2.5vw;
+    }
+
+    #Bulleg
+    {
+        height:unset;
+    }
+    #Bulleg img
+    { 
+        height: 37.2vw;
+    }
+    #Bulle04 img 
+    {
+        height:37.2vw;
+    }
+
+    #Bulle02
+    {
+        height:100%;
+
+    }
+    #Bulle03
+    {
+        height:100%;
+        margin-bottom:unset;
+        margin-left:2.5vw;
+    }
+    #Bulle04
+    {
+        margin-top: 3vw;
+        height: UNSET;
+        Width: 30vw;
+    }
+
+    #footer
+    {
+        margin-top:4vw;
+    }
+
+    #h1
+{
+    font-size:3.5em;
+}
+#article
+{
+ background-color: white;
+}
+#h5
+{
+    font-size: 2.0em;
+    grid-area: titre;
+    margin-bottom:2vw;
+}
+
+#h3
+{
+    font-size:2.0em;
+}
+
+#h2
+{
+    font-size: 3.0em;
+}
+.H4mobile
+{
+    font-size:1.5em;
+}
+
+#footer h6
+{
+    font-size:2.2em
+}
+.Mobilesize
+{
+    font-size:1.5em
+}
+#icsearch
+{
+display: flex;
+font-size: 2.0em;
+color: white;
+margin-left: 3vw;
+}
+.search p 
+{display:none;
+}
+#haut
+{
+    background-color: white;
+}
+#bas
+{
+    background-color:white;
+}
+}
+
+
+
+/*Police*/
+
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('static/Raleway-Regular.ttf');
+     
+    
+}
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('static/Raleway-ExtraBold.ttf')
+}
+
+@font-face {
+    font-family: 'Raleway-Thin';
+    src: url('static/Raleway-Thin.ttf')
+}
+
+/*Général*/
+
+
+.search span
+{
+    display:none;
+}
+
+p{
+font-family:'Raleway-regular';
+font-size:small;
+}
+
+h1
+{
+   
+    color:#313131;
+    font-family: 'Raleway', 'Black900';
+    grid-area:h3;
+    margin-top:20px;
+   font-size:x-large;
+   margin-bottom:0px;
+}
+
+h2
+{
+       color:#313131;
+   font-family: 'Raleway', black900;
+    grid-area:h3;
+   margin-bottom:40px;
+   margin-top:31px;
+   
+}
+h3
+{
+      color:#313131;
+   font-family: 'Raleway', black900;
+}
+h6
+{
+margin-left:35px;
+font-family:'Raleway','Bold900';
+Margin-bottom:25px;
+font-size:medium;
+}
+
+h4
+
+{
+    font-family: 'Raleway';
+    grid-area:h5;
+    margin-top:8px;
+    margin-left:20px;
+    margin-bottom:2px;
+}
+
+h5
+{
+    color:black;
+    font-family: 'Raleway', '700';
+    margin-right:20px;
+    font-size:medium;
+}
+
+
+h6
+{
+margin-left:35px;
+font-family:'Raleway','Bold900';
+Margin-bottom:25px;
+font-size:medium;
+}
+
+/*Body*/
+body
+{
+    background-color: white;
+    width: 100%;
+    height: 100%; 
+    display:grid;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr;
+    grid-template-areas: 
+    ". header header header . "
+    ". main main main ."
+    ". main main main ."
+    ". main main main ."
+    "footer footer footer footer footer ";
+    margin-bottom:0px;
+
+}
+
+.stargray i
+{
+    color:gray;
+}
+/*Header */
+header
+{
+grid-area:header;
+width:100%;
+font-family: 'Raleway', '300';
+justify-content: space-between;
+display:flex;
+align-items:center;
+}
+/*Nav*/
+nav
+{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.sign
+{
+    margin-left:51vw;
+}
+/*Logo*/
+nav img
+{
+padding-top:18px;
+}
+
+
+/*Lien de navigation */
+nav a 
+{
+    Float:right;
+    padding:35px;
+    text-decoration:none;
+    color:gray;
+}
+
+/* Effet au passement de la souris*/
+nav a:hover
+{
+    border-top:solid;
+    border-color:#0065FC;
+    color:#0065FC;
+}
+
+nav a:focus
+{
+    border-top:solid;
+    border-color:#0065FC;
+    color:#0065FC;
+}
+nav a:active
+{
+    border-top:solid;
+    border-color:#0065FC;
+    color:#0065FC;
+}
+
+/*Filtres */
+
+.filtres
+{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin-top:10px;
+    font-family: 'Raleway-Bold','sans sherif';
+ 
+}
+
+/*Bordure et alignement */
+.iconfiltre 
+{
+    border: 2px solid #f2f2f2;
+    margin-right:20px;
+    height:50px;
+    display:flex;
+    align-items:center;
+     border-radius:30px;
+   
+}
+
+/* Marge  et bordure à l'interieur de la bulle */
+.iconfiltre p
+{
+    
+
+    font-family:'Raleway','600';
+    padding:12px;
+    padding-left:2px;
+    border-color:#D9D9D9;
+}
+
+
+/*Icon */
+.iconfiltre i
+{
+background-color:#DEEBFF;
+height:50px;
+width:50px;
+border-radius:50%;
+color:#0065FC;
+display:flex;
+align-items:center;
+justify-content: center;
+}
+
+.iconfiltre i:hover   
+{
+   
+background-color:#0065FC;
+padding:2px;
+border-radius:50%;
+color:#DEEBFF; 
+border-color:white;
+border-style:solid 1px;
+}
+.iconfiltre:hover
+{
+      border: 2px solid #0065FC;
+    margin-right:20px;
+    height:50px;
+    display:flex;
+    align-items:center;
+     border-radius:30px;
+     background-color:#DEEBFF;
+    color:white;
+}
+
+
+
+
+.icon
+{
+    height:50px;
+    width:50px;
+}
+/*Main*/
+
+main
+{
+display:flex;
+justify-content: center;
+flex-direction:column;
+grid-area:main;
+height:100%;
+}
+
+/*Bouton recherche*/
+button
+{
+    height:50px;
+    width:100px;
+    border-radius: 0 15px 15px 0px;
+    background-color:#0065FC;
+    border-style:none;
+    color:white;
+}
+
+.search
+{
+    display:flex;
+align-content:center;
+align-items:center;
+}
+
+.search i
+{
+ height:15px;
+ width:15px;
+ Padding:17.5px;
+ background-color:rgb(224, 224, 224);
+ border-radius: 15px 0px 0px 15px;
+
+}
+.recherche
+{
+    
+  height:50px;
+border-color:rgb(224, 224, 224);
+border-style:solid;
+
+}
+
+/*partie info*/
+.info
+{
+display:flex;
+margin-top:25px;
+margin-bottom:25px;
+align-content:center;
+}
+
+.info i
+{
+  
+    color:#0065FC;
+    border-color:#F2F2F2;
+    border-style:solid;
+    border-radius:60px;
+    height:26px;
+    display:flex;
+    align-items:center;
+    width:26px;
+    justify-content: center;
+    margin-right:10px;
+    font-size: 1.2em;
+  
+    border-radius: 60em;
+height: 2vw;
+width: 2vw;
+font-size: 1.2em;
+}
+
+/*icon étoile*/
+
+.étoile
+{
+    margin-left:20px;
+
+}
+
+.étoile i
+{
+ 
+    margin-left:2px;
+}
+.fa, .fas
+{
+    color:#0065FC;
+}
+
+/* Section haut */
+
+
+.sectionhaut
+{
+display:flex;
+
+width:100%;
+
+margin-top:5px;
+height:50%;
+grid-area:section;
+}
+
+/*L'article de la section*/
+.sectionhaut h2
+{
+     margin-left:40px;
+     margin-top:2vw;
+     margin-bottom:1vw;
+}
+
+section div 
+{
+    background-color: #F2F2F2;
+   flex:2;
+  
+   height:100%;
+   width:100%;
+    border-radius:15px;
+    display:flex;
+    flex-direction:column;
+flex-grow:2;
+}
+
+.more
+{
+  
+    margin-left:50px;
+}
+
+/*image de l'article*/
+
+.haut article
+{
+background-color:white;
+    
+    padding-bottom:20px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 25px 25px 25px 25px;
+    display:flex;
+    margin-left:20px;
+    margin-right:20px;
+    flex-direction:column;
+
+}
+
+.imagehaut
+{
+ grid-area:imagehaut;
+}
+
+.imagebas
+{grid-area:imagebas;
+}
+
+div img
+{
+    width: 17vw;
+    height: 8vw;
+    border-radius: 24px 24px 0px 0px;
+    margin-left: 5px;
+    margin-right:5px;
+    margin-top:5px;
+}
+/*Aside*/
+
+section aside
+{
+    grid-area:aside;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    
+    margin-left:35px;
+    flex:0.5;
+    padding:15px;    border-radius:15px;
+   
+}
+
+aside article
+{
+ background-color:white;
+    min-width:20vw;
+    
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 25px 25px 25px 25px;
+    display:flex;
+   
+    margin-top:25px;
+    margin-bottom:25px;
+    align-items:center;
+  
+}
+
+.Asidetextcontent
+{
+    display:flex;
+    flex-direction:column;
+    padding-bottom:35px;
+    margin-top:0px;
+}
+
+.Asidetextcontent p
+{
+    Margin-top:0px;
+    margin-left:20px;
+    margin-bottom:10px;
+}
+aside img
+{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 20px 0px 0px 20px;
+    display:flex;
+    grid-area:aside;
+    margin-left:5px;
+    
+}
+
+
+
+.haut 
+{
+    display:flex;
+    flex-direction:row;
+    height:15vw;
+    margin-top:20px;
+    justify-content: center;
+    margin-bottom:30px;
+}
+
+.bas article
+{
+  
+
+    background-color:white;
+    
+    padding-bottom:40px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 25px 25px 25px 25px;
+    display:flex;
+    margin-left:20px;
+    margin-right:20px;
+    flex-direction:column;
+    width:auto;
+}
+
+
+.bas
+{
+    display:flex;
+    flex-direction:row;
+    margin:auto;
+    justify-content:center;
+    height:15vw;
+}
+
+
+
+/*marge des texte*/
+
+.haut article p
+{
+margin-left:20px;
+margin-top:0px;
+
+margin-bottom:0px;
+}
+
+.bas article p
+{
+margin-left:20px;
+margin-top:0px;
+margin-bottom:0px;
+}
+
+/*Section Basse */
+/*Disposition de la section basse*/
+.sectionbas
+{
+     display:flex;
+    height:50%;
+    width:100%;
+    flex-direction:row;
+    justify-content:space-between;
+ 
+}
+
+
+.ordre
+{
+
+    display:flex;
+    flex-direction:column;
+    grid-area:figure;
+    align-items:center;
+}
+
+.ordre .Bulleimages img
+{
+       width: 290px;
+       height:150px;
+    max-height: 200px;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 1px 1px 5px rgb(150, 150, 150);
+    height:10.5vw;
+}
+
+.ordre .Marge
+{
+    margin-top:3vw;
+}
+
+
+/*Police du Titre*/
+/*Marge du titre*/
+.sectionbas h5
+{
+font-family:'Raleway-Regular';
+margin-right:130px;
+}
+
+
+/*Image de la section basse */
+/*Largeur des image de la section basse*/
+.sectionbas  img 
+{
+    border-radius: 25px 25px 0px 0px;
+    width:19vw
+}
+
+/* Coté Gauche de la section basse*/
+/*La section basse est scindé en 2 partie contenant 3 élement chacune */
+
+/*Disposition de l'element*/
+
+
+/* Bulle*/
+
+
+.Bulle03
+{
+      background-color:white;
+    
+    padding-bottom:10px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 25px 25px 25px 25px;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    flex-direction:column;
+    margin-bottom:50px;
+}
+
+.Bulle03 img
+{
+ height:8vw;
+}
+
+.titresizemobile i 
+{
+    color:black;
+}
+
+.Bulle02
+{
+     background-color:white;
+    
+    padding-bottom:10px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 25px 25px 25px 25px;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    flex-direction:column;
+}
+
+
+
+/* hauteur de l'image coté gauche*/
+.Gauche .Bulleimages img
+{
+    min-height:365px;
+    max-height:500px;
+}
+
+
+.Bulle02 img
+{
+ max-height:200px;
+}
+
+
+
+/*Coté droite de la section basse*/
+
+
+
+/*Bulle */
+
+.Bulleimages
+{
+     background-color:white;
+    
+    padding-bottom:10px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 25px 25px 25px 25px;
+    display:flex;
+    flex-direction:column;
+
+}
+
+
+.Bulle01
+{
+     background-color:white;
+    
+    padding-bottom:10px;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 25px 25px 25px 25px;
+    display:flex;
+    height:80%;
+    padding-bottom:1vw;
+    flex-direction:column;
+}
+
+
+
+.Bulle04
+{
+    background-color:white;
+    
+    padding-bottom:1vw;
+    box-shadow: 1px 1px 10px rgb(150, 150, 150);
+    border-radius: 25px 25px 25px 25px;
+    display:flex;
+    flex-direction:column;
+    height:80%;
+    
+}
+
+
+
+/*Image du coté droit*/
+
+
+.Bulle01 img
+
+{
+height:30vw;
+}
+
+.Bulle04 img
+{
+ height: 32.5vw;
+}
+
+
+/* Footer */
+footer
+{
+    background-color:#F2F2F2 ;
+    width:100%;
+    grid-area:footer;
+    display:flex;
+    flex-direction:row;
+    height:100%;
+    justify-content: space-around;
+    
+}
+
+/*Style code rubrique a propos*/
+
+.Apropos a
+
+{
+    text-decoration:none;
+    color:black;
+    font-family:'Raleway';
+}
+
+.Apropos ul
+{
+    list-style-type:none;
+    
+}
+
+.Apropos li
+{
+    height:30px;
+}
+
+/*Style code nos hébergement */
+
+.Noshébergement a
+
+{
+    text-decoration:none;
+    color:black;
+    font-family:'Raleway';
+}
+
+.Noshébergement ul
+{
+    list-style-type:none;
+}
+
+.Noshébergement li
+{
+    height:30px;
+}
+
+/* Style code rubrique Assistance*/
+
+.Assistance a
+
+{
+    text-decoration:none;
+    color:black;
+    font-family:'Raleway';
+}
+
+.Assistance ul
+{
+    list-style-type:none;
+}
+
+.Assistance li
+{
+    height:30px;
+}
+
+Aside h2
+{
+    display:flex;
+    justify-content: space-evenly;
+}
+/*Fin du code Css*/
+/*Codé crée par Itooma Ronny*/
